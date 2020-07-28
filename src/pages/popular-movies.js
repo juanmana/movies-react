@@ -33,9 +33,7 @@ export default function Popular() {
       </Col>
       {movieList.results ? (
         <Row>
-          <Col span="24">
             <MovieCatalog movies={movieList} />
-          </Col>
           <Col span="24">
             <Pagination
               currentPage={movieList.page}

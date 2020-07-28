@@ -6,6 +6,7 @@ import useFetch from "../../hooks/useFetch";
 import { URL_API, API } from "../../utils/contants";
 import Loading from "../../components/Loading";
 import ModalVideo from "../../components/ModalVideo";
+import { EyeOutlined } from '@ant-design/icons';
 
 import "./movie.scss";
 
@@ -70,7 +71,7 @@ function MovieInfo(props) {
       if (videoMovie.result.results.length > 0) {
         return (
           <>
-            <Button icon="play-circle" onClick={openModal}>
+            <Button icon={<EyeOutlined />}  onClick={openModal}>
               Ver trailer
             </Button>
             <ModalVideo

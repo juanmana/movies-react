@@ -33,9 +33,7 @@ export default function NewMovies() {
       </Col>
       {movieList.results ? (
         <Row>
-          <Col span="24">
             <MovieCatalog movies={movieList} />
-          </Col>
           <Col span="24">
             <Pagination
               currentPage={movieList.page}
@@ -45,7 +43,7 @@ export default function NewMovies() {
           </Col>
         </Row>
       ) : (
-        <Col span="24">
+        <Col span="12">
           <Loading />
         </Col>
       )}

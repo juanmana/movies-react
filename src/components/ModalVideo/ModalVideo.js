@@ -29,7 +29,7 @@ export default function ModalVideo(props) {
       onCancel={close}
       footer={false}
     >
-      <ReactPlayer url={urlVideo} controls />
+      <ReactPlayer url={urlVideo} controls playing={isOpen}/>
     </Modal>
   );
 }

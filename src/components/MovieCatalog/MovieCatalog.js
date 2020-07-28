@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Card} from "antd";
 import { Link } from "react-router-dom";
-import Icon from '@ant-design/icons';
+import {EyeOutlined} from '@ant-design/icons';
+
 
 
 
@@ -32,8 +33,8 @@ function MovieCard(props) {
         hoverable
         style={{ width: 240 }}
         cover={<img alt={title} src={posterPath} />}
-        actions={[<Icon type="eye" key="eye" />]}
-      >
+        actions={[<EyeOutlined key="eye" />]}
+        >
         <Meta title={title} />
       </Card>
     </Link>
